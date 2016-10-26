@@ -1,0 +1,16 @@
+[package]
+name = "capnp-rpc-tokio"
+version = "0.1.0"
+build = "build.rs"
+
+[lib]
+
+name = "capnp_rpc_tokio"
+path = "src/lib.rs"
+
+[build-dependencies]
+capnpc = "0.7"
+
+[dependencies]
+capnp = {version = "0.7", features = ["rpc"]}
+capnp-futures = "0.0"
